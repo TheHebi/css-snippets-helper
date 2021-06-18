@@ -1,0 +1,78 @@
+/* global properties */
+* {
+    color: white
+}
+
+/* body properties */
+body {
+    background: rgb(36, 36, 36)
+}
+
+/* card boxes*/
+
+.card {
+    width: 300px;
+    border: 5px dashed black;
+    padding: 30px;
+    margin: 15px;
+}
+
+/* header box  */
+
+header {
+    border: solid;
+    text-align: center;
+    margin: 25px;
+}
+
+#class-cards-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* card header */
+.card-header {
+    display: flex;
+    border-color: white;
+    border-radius: 5px;
+    position: absolute;
+    align-self: center;
+    top: -30px;
+    width: 85%;
+    border-style: solid;
+}
+
+.card {
+    position: relative;
+}
+
+/* footer */
+
+footer{
+    border: solid;
+    text-align: center;
+}
+
+/* code text */
+
+.code-card {
+    font-family: monospace;
+    background-color: purple;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: auto;
+}
+
+/* box transition glow */
+/* .code-card .card-header {
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out:
+} */
+.card:hover,
+.card:hover .card-header {
+     box-shadow: 10px 10px 8px purple;
+ }
