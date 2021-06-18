@@ -27,7 +27,6 @@ header {
 
 #class-cards-box{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -65,14 +64,22 @@ footer{
     text-align: left;
     margin-top: 40px;
     margin-left: auto;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
 }
 
 /* box transition glow */
-/* .code-card .card-header {
-    border-radius: 50px;
-    transition: all 0.5s ease-in-out:
-} */
+.card .card-header {
+    border-radius: 500px;
+    transition: all 0.5s ease-in-out;
+}
 .card:hover,
 .card:hover .card-header {
      box-shadow: 10px 10px 8px purple;
+ }
+
+ pre {
+     white-space: pre-wrap;
  }
